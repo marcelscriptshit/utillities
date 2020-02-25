@@ -31,7 +31,6 @@ local copy = setclipboard or clipboard.set or copystring
 
 local main = getgenv().main
 local funcs = getgenv().funcs
-local const_lib = getgenv().consts_lib
 
 if getgenv().funcs == nil or getgenv().main == nil then
   return
