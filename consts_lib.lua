@@ -1,6 +1,6 @@
 warn("loading consts module")
 
-local consts_lib = {}
+local const_lib = {}
 
 local r = game:GetService("RunService")
 local Players = game:GetService("Players")
@@ -67,4 +67,4 @@ end
 
 warn("loaded consts module")
 
-return consts_lib
+return const_lib
