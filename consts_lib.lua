@@ -1,6 +1,6 @@
 warn("loading consts module")
 
-getgenv().consts_lib = {}
+local consts_lib = {}
 
 local r = game:GetService("RunService")
 local Players = game:GetService("Players")
@@ -66,5 +66,4 @@ function const_lib:warnConsts(func,descend)
   end
 end
 
-
-warn("loaded consts module")
+return consts_lib
