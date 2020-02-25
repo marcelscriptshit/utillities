@@ -80,7 +80,7 @@ function loops_lib:RunLoop(name, func, wait_time, destroyed, ...)
 end
 
 
-function loops_lib:StopLoop(name) then
+function loops_lib:StopLoop(name)
   local loops = loops_lib.loops
   if loops[name] == nil then
     return
@@ -89,7 +89,7 @@ function loops_lib:StopLoop(name) then
 end
 
 
-function loops_lib:BreakLoop(name) then
+function loops_lib:BreakLoop(name)
   local loops = loops_lib.loops
   if loops[name] == nil then
     return
