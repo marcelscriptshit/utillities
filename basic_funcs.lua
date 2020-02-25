@@ -33,7 +33,7 @@ local main = getgenv().aurora.main
 local funcs = getgenv().aurora.funcs
 local fakebackups = {}
 
-if getgenv().funcs == nil or getgenv().main == nil then
+if main == nil or funcs == nil then
   return
 end
 
