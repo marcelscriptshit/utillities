@@ -1,4 +1,4 @@
-warn("loading consts module")
+warn("loading basic funcs module")
 
 local basic_funcs = {}
 
@@ -121,5 +121,6 @@ function basic_funcs:import(branch,branch2,name)
   return loadstring(game:HttpGet(link, true))()
 end
 
+warn("loaded basic funcs")
 
 return basic_funcs
