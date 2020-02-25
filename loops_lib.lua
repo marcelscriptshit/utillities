@@ -1,7 +1,7 @@
 warn("loading loop module")
 
-getgenv().loops_lib = {}
-getgenv().loops_lib.loops = {}
+local loops_lib = {}
+loops_lib.loops = {}
 
 local r = game:GetService("RunService")
 local Players = game:GetService("Players")
@@ -110,3 +110,5 @@ end
 
 
 warn("loaded loop module")
+
+return loops_lib
