@@ -1370,4 +1370,4 @@ end
 game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.RightShift)
 
 
-getgenv().mainui = library
+return library
