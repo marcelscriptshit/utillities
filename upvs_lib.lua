@@ -62,4 +62,4 @@ end
 
 warn("loaded upvs module")
 
-return
+return upvs_lib
