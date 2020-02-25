@@ -66,4 +66,6 @@ function const_lib:warnConsts(func,descend)
   end
 end
 
+warn("loaded consts module")
+
 return consts_lib
