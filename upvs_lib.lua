@@ -1,6 +1,6 @@
 warn("loading upvs module")
 
-getgenv().upvs_lib = {}
+local upvs_lib = {}
 
 local r = game:GetService("RunService")
 local Players = game:GetService("Players")
@@ -31,7 +31,6 @@ local copy = setclipboard or clipboard.set or copystring
 
 local main = getgenv().main
 local funcs = getgenv().funcs
-local upvs_lib = getgenv().upvs_lib
 
 if getgenv().funcs == nil or getgenv().main == nil then
   return
@@ -61,5 +60,6 @@ function upvs_lib:warnUpvs(func,descend)
   end
 end
 
-
 warn("loaded upvs module")
+
+return
