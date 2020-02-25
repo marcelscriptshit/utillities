@@ -33,7 +33,7 @@ local copy = setclipboard or clipboard.set or copystring
 local main = getgenv().aurora.main
 local funcs = getgenv().aurora.funcs
 
-if getgenv().funcs == nil or getgenv().main == nil then
+if main == nil or funcs == nil then
   return
 end
 
