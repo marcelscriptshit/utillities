@@ -29,8 +29,8 @@ local mt = getrawmetatable(game)
 local setreadonly = make_writeable or setreadonly
 local copy = setclipboard or clipboard.set or copystring
 
-local main = getgenv().main
-local funcs = getgenv().funcs
+local main = getgenv().aurora.main
+local funcs = getgenv().aurora.funcs
 
 if getgenv().funcs == nil or getgenv().main == nil then
   return
