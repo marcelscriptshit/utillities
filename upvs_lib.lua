@@ -42,11 +42,14 @@ function upvs_lib:findWithTable(tofind,tofind2)
     if type(v) == "function" and not is_synapse_function(v) then
       for i2,v2 in next, getupvals(v) do
         if type(v2) == "table" then
+          
           if rawget(v2,tofind) then
             if tofind2 ~= nil then
               if rawget(v2,tofind2) then
                 return v2
               end
+              return false
+            else
               return v2
             end
           end
