@@ -39,26 +39,29 @@ end
 
 function upvs_lib:findWithTable(tofind)
   local found = {}
+  local currtable
   
   for i,v in next, getreg() do
     if type(v) == "function" and not is_synapse_function(v) then
       for i2,v2 in next, getupvals(v) do
         if type(v2) == "table" then
+          currtable = v2
           for i3,v3 in pairs(tofind) do
             if rawget(v2,v3) then
               found[v3] = true
             end
           end
           for i3,v3 in pairs(found) do
-            if tofind[v3] ~= nil then
-              return tofind[v3]
+            if tofind[v3] == nil then
+              return false
             end
           end
+          
         end
       end
     end
   end
-  return false
+  return currtable
 end
 
 
