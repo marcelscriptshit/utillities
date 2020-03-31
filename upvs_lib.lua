@@ -44,11 +44,8 @@ function upvs_lib:findWithTable(tofind,tofind2)
         if type(v2) == "table" then
           
           if rawget(v2,tofind) then
-            if tofind2 ~= nil then
-              if rawget(v2,tofind2) then
-                return v2
-              end
-              return false
+            if tofind2 ~= nil and rawget(v2,tofind2) then
+              return v2
             else
               return v2
             end
@@ -60,6 +57,7 @@ function upvs_lib:findWithTable(tofind,tofind2)
   end
   return false
 end
+
 
 
 
