@@ -47,7 +47,7 @@ end
 function const_lib:matchConsts(func,tabll)
   local found = {}
   for i,v in pairs(tabll) do
-    found[v[2]] = funcs:findConst(func,v[1],v[2])
+    found[v[2]] = const_lib:findConst(func,v[1],v[2])
   end
   for i,v in pairs(tabll) do
     if found[v[2]] == nil then
